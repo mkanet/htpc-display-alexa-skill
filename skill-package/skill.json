@@ -1,0 +1,40 @@
+{
+  "manifest": {
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "HTPC Display",
+          "summary": "Shows what is playing on your home theater PC.",
+          "description": "Shows the title, artwork and progress of what is playing on your home theater PC on an Echo Show. Private skill for use with HTPC Companion.",
+          "examplePhrases": ["Alexa, open media display"],
+          "keywords": ["htpc", "now playing"]
+        }
+      },
+      "isAvailableWorldwide": false,
+      "distributionCountries": ["US"],
+      "category": "SMART_HOME",
+      "testingInstructions": "Private skill. Not intended for certification."
+    },
+    "apis": {
+      "custom": {
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL",
+            "supportedViewports": [
+              { "mode": "HUB", "shape": "RECTANGLE", "minWidth": 960, "maxWidth": 1920, "minHeight": 480, "maxHeight": 1200 }
+            ]
+          },
+          { "type": "AUDIO_PLAYER" }
+        ]
+      }
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    }
+  }
+}
